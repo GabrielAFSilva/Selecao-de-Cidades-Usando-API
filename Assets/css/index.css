@@ -1,0 +1,132 @@
+:root {
+    --font-size-very-small: 0.75rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.25rem;
+    --font-size-small-big: 1.5rem;
+    --font-size-big: 2rem;
+    --font-size-very-big: 2.5rem;
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: var(--font-size-small);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+hr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title {
+    color: rgb(38, 100, 155);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: var(--font-size-big);
+}
+
+.subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: var(--font-size-medium);
+}
+
+.containerSelects {
+    border: solid rgb(139, 170, 228) 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.uf {
+    width: 100px;
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid;
+    margin-bottom: 8px;
+    font-size: var(--font-size-very-small);
+}
+
+.local {
+    width: 200px;
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid;
+    font-size: var(--font-size-very-small);
+}
+
+.optVoids {
+    display: none;
+}
+
+.btnEnviar {
+    margin-top: 10px;
+    width: 55px;
+    height: 28px;
+    font-weight: bold;
+    background-color:rgb(27, 80, 255);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btnEnviar:hover {
+    background-color: blue;
+}
+
+.btnLimparCampos {
+    width: 110px;
+    height: 28px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    .containerSelects {
+        margin-right: 250px;
+    }
+
+    .subtitle {
+        font-size: var(--font-size-small-big);
+    }
+
+    .selectLabels {
+        font-size: var(--font-size-medium);
+    }
+
+    .uf, .local {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .containerSelects {
+        margin-right: 450px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .containerSelects {
+        margin-right: 850px;
+    }
+
+    .title {
+        font-size: var(--font-size-very-big);
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .containerSelects {
+        margin-right: 1250px;
+    }
+
+    .subtitle {
+        font-size: var(--font-size-big);
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/index.css">
+    <title>Seleção de Cidades</title>
+</head>
+
+<body>
+    <h1 class="title">Seleção de cidade por UF</h1>
+    <hr>
+    <h2 class="subtitle">Consulte e selecione as cidades de cada unidade federativa do 
+        Brasil. Os campos assinalados com (*) são obrigatórios.
+    </h2>
+    <div class="containerSelects">
+        <label class="selectLabels" for="UF">UF *:</label>
+        <select name="UF" id="slctUF" class="uf">
+            <option value="" disabled selected>Selecione</option>
+        </select>
+        <label class="selectLabels" for="local">Cidade *:</label>
+        <select name="local" id="slctLocal" class="local" disabled>
+        </select>
+        <div class="buttons">
+        <input class="btnEnviar" id="submitBtn" type="submit" value="Enviar">
+        </div>
+    </div>
+    <script src="Assets/js/index.js"></script>
+</body>
+
+</html>
